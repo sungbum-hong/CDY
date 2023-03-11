@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/* Web Font Settings 
+  1. font-family: 'Roboto', sans-serif;
+  2. font-family: 'Open Sans', sans-serif;
+  3. font-family: 'Lato', sans-serif;
+  4. font-family: 'Nanum Gothic', sans-serif;
+  5. font-family: 'Noto Sans KR', sans-serif;  
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ******************* 레이아웃 구성시작 **************** */
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+  
+html, body{ width: 100%; height: 100%; }
+
+ul, ol{ list-style: none; }
+a{ color: #000; text-decoration: none; }
+
+ 
+/* ******************* 공통영역 선언시작 **************** */
+#wrap {
+  margin: auto;
+  height: auto;
+}
+
+#profile, #footer {
+  width: 1200px;
+  height: 100px;
+}
+
+#header {
+  margin: 48px auto 63px;
+}
+
+#profile {
+  margin: 0 auto;
+  position: relative;
+  padding: 15px 0;
+}
+
+#footer {
+  margin: auto;
+  position: relative;
+}
+ 
+/* ******************* 개별영역 선언시작 **************** */
+
+/* Header Start*/
+#header h1 {
+  width: 500px;
+  height: 80px;
+  float: left;
+}
+
+#header .gnb {
+  width: 100px;
+  height: 80px;
+  float: right;
+  text-align: center;
+}
+#header .gnb img {
+  margin-top: 15px;
+}
+
+/* Profile */
+#profile .box {
+  clear: both;
+}
+#profile .box1{
+  float: left;
+}
+
+#profile .box2{
+  width: 130px;
+  height: 80px;
+  text-align: center;
+  float: right;
+}
+#profile .box2 li {
+  float: left;
+  font: 600 1.8rem 'Nanum Gothic', sans-serif;
+  margin-right: 10px;
+}
+
+#profile .box2 .btn {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+#profile .box2 .btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.box_all {
+  width: 1200px;
+  height: 1000px;
+  margin: 50px auto;
+  background-color: rgb(254, 224, 224);
+}
+
+/* Footer */
+
+#footer .f-box {
+  width: 125px;
+  height: 50px;
+  float: right;
+}
+#footer .f-box li {
+  float: left;
+}
+#footer .f-box li .btn {
+  width: 50px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-right: 20px;
+  cursor: pointer;
+  font: 400 1.6rem/30px 'Nanum Gothic', sans-serif;
+}
+
+#footer .f-box li .btn:last-child {
+  margin-right: 0;
+}
+
+#footer .f-box li .btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* popup CSS */
+
+/* Writed_popup*/
+#writed_popup,
+#remove_popup {
+  width: 400px;
+  height: 300px;
+  border: 3px solid #722EFF;
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 100;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -150px;
+  display: none;
+  text-align: center;
+  line-height: 200px;
+}
+  #writed_popup .p-header,
+  #remove_popup .r-header {
+    width: 400px;
+    height: 100px;
+    font: 400 1.4rem/100px 'Nanum Gothic', sans-serif;
+  }
+
+  #writed_popup .p-mid,
+  #remove_popup .r-mid {
+    width: 400px;
+    height: 200px;
+    position: relative;
+
+  }
+  #writed_popup .p-mid input,
+  #remove_popup .r-mid input{
+    width: 100px;
+    height: 30px;
+    margin: 0 10px;
+    border: 2.5px solid #722EFF;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+/* Remove popup */

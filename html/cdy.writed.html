@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스터디 기록완료</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/cdy.writed.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+      <!-- Header Start-->
+      <div id="header">
+      </div>  <!-- Header End-->
+
+      <!-- Profile Start -->
+      <div id="profile">
+        <div class="p-box box1">
+          <img src="../image/icon_c.png" alt="프로필">
+        </div>
+
+        <div class="p-box box2">
+          <ul>
+            <li><input type="button" class="btn" value="URL"></li>
+            <li><input type="button" class="btn" value="수정" id="reset"></li>
+            <li><input type="button" class="btn" value="삭제" id="remove"></li>
+          </ul>
+        </div>
+      </div> <!-- Profile End-->
+      
+      
+      <div class="box_all">네모</div>
+
+      <!-- footer Start -->
+      <div id="footer">
+        <div class="f-box">
+          <ul>
+            <li>
+              <input type="button" class="btn" value="이전글">
+              <input type="button" class="btn" value="다음글">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <!-- reset popup -->
+    <div id="writed_popup">
+      <div class="p-header">
+        <h2>수정 하시겠습니까?</h2>
+      </div>
+
+      <div class="p-mid">
+      <a href="../html/cdy.writer.html">
+        <input type="button" value="수정하기">
+      </a>
+        <input type="button" value="다시생각" id="closebtn">
+      </div>
+    </div>  
+
+    <div id="remove_popup">
+      <div class="r-header">
+        <h2>삭제 하시겠습니까?</h2>
+      </div>
+
+      <div class="r-mid">
+      <a href="../html/cdy.writerec.html"><input type="button" value="삭제하기"></a>
+      <input type="button" value="다시생각" id="closebtn1">
+      </div>
+    </div>  
+    <script src="../js/popup2.js"></script>
+</body>
+</html>

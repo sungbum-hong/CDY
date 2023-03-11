@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/* Web Font Settings 
+  1. font-family: 'Roboto', sans-serif;
+  2. font-family: 'Open Sans', sans-serif;
+  3. font-family: 'Lato', sans-serif;
+  4. font-family: 'Nanum Gothic', sans-serif;
+  5. font-family: 'Noto Sans KR', sans-serif;  
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+  /* ******************* 레이아웃 구성시작 **************** */
+
+  *{ margin: 0; padding: 0; box-sizing: border-box; }
+  
+  html, body{ width: 100%; height: 100%; }
+
+
+  ul, ol{ list-style: none; }
+  a{ color: #000; text-decoration: none; }
+  hr {
+    width: 100%; 
+    margin: auto; 
+    border: 0.1px solid rgb(181, 181, 181);
+  }
+
+  /* ******************* 공통영역 선언시작 **************** */
+  #wrap {
+    margin: auto;
+    height: auto;
+  }
+  
+  #header, #profile {
+    width: 1200px;
+    height: 100px;
+  }
+
+  #header {
+    margin: 48px auto 63px;
+  }
+  
+  #profile {
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #footer {
+    margin: auto;
+    position: relative;
+  }
+
+  .note-editor {
+    margin: 50px auto 300px;
+  }
+  /* ******************* 개별영역 선언시작 **************** */
+  
+  
+  /* ******************* Header Start **************** */
+  #header h1 {
+    width: 500px;
+    height: 80px;
+    background-image: url(../image/headerlogo_h2.png);
+    float: left;
+  }
+  
+  #header .gnb {
+    width: 100px;
+    height: 80px;
+    float: right;
+    text-align: center;
+  }
+  #header .gnb img {
+    margin-top: 15px;
+  }
+  
+  /* ******************* Profile Start **************** */
+  #profile .box {
+    clear: both;
+  }
+  #profile .box1{
+    float: left;
+  }
+    #profile .box1 h2{
+      font: bold 1.8rem/100px 'Nanum Gothic', sans-serif;
+    }
+  #profile .box2{
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    float: right;
+  }
+    #profile .box2 .btn {
+      width: 80px;
+      height: 30px;
+      background-color: #fff;
+      border: 1px solid #333;
+      border-radius: 10px;
+      margin-top: 30px;
+      cursor: pointer;
+
+    }
+    #profile .box2 .btn:hover {
+      background-color: #333;
+      color: #fff;
+    }

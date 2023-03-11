@@ -1,0 +1,132 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
+}
+.header {
+    position: relative;
+    width: 1400px;
+    height: 200px;
+
+}
+    .header a img {
+        position: absolute;
+        left: 450px;
+        top: 50px;
+        
+    }
+    .singup {
+        width: 600px;
+    }
+        fieldset {
+            width: 600px;
+            height: 600px;
+            display: block;
+            min-inline-size: min-content;
+            border-color: #722EFF;
+        }
+            #join_main_font {
+                color: #722EFF;
+                font-size: 27px;
+                margin-left: 250px;
+            }
+                .join_info {
+                    position: relative;
+                    padding-top: 10px;
+                    height: 400px;
+                }
+                    .join_info #email{
+                        position: relative;
+                        clear: both;
+                        top: 15px;
+                        width: 250px;
+                        height: 20px;
+                        line-height: 20px;
+                    }
+                    .join_info #password {
+                        position: relative;
+                        clear: both;
+                        top: 15px;
+                        width: 250px;
+                        height: 20px;
+                        line-height: 20px;
+                    }
+                    .join_info #password2 {
+                        position: relative;
+                        clear: both;
+                        top: 25px;
+                        width: 250px;
+                        height: 20px;
+                        line-height: 20px;
+                    }
+                    .join_info #filed {
+                        position: relative;
+                        clear: both;
+                        top: 10px;
+                        width: 250px;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                    .join_info #motive {
+                        position: relative;
+                        clear: both;
+                        top: 15px;
+                        width: 500px;
+                        height: 70px;
+
+                    }
+                #join_email_01 {
+                    position: relative;
+                    clear: both;
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
+                    #join_email_01 img {
+                        position: absolute;
+                        top: 1px;
+                    }
+                #join_email_02 {
+                    position: relative;
+                    clear: both;
+                    margin-top: 40px;
+                    font-size: 18px;
+                }
+                    #join_email_02 img {
+                        position: absolute;
+                        top: 1px;
+                    }
+                #join_email_03 {
+                    position: relative;
+                    clear: both;
+                    margin-top: 50px;
+                    font-size: 18px;
+                }
+                    #join_email_03 img {
+                        position: absolute;
+                        top: 1px;
+                    }
+                #join_email_04 {
+                    position: relative;
+                    clear: both;
+                    margin-top: 50px;
+                    font-size: 18px;
+                    height: 30px;
+                }
+                    #join_email_04 img {
+                        position: absolute;
+                        top: 1px;
+                    }
+                .singup button {
+                    display: block;
+                    width: 500px;
+                    height: 50px;
+                    line-height: 50px;
+                    background-color: #722eff;
+                    margin-top: 70px;
+                    margin-left: 45px;
+                    color: white;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 10px;
+                }
