@@ -3,63 +3,63 @@
 body {
   color: #333;
 }
-  h1, h2 {
-    color: #333;
-  }
-  h2 {
-    font-size: 21px;
-  }
+h1,
+h2 {
+  color: #333;
+}
+h2 {
+  font-size: 21px;
+}
 /* ******************* 레이아웃 구성시작 **************** */
- #wrap {
-   height: auto;
-   margin: auto;
- }
-  #header {
-    width: 1200px;
-    height: 80px;
-    margin: 30px auto;
-    position: relative;
-  }
+#wrap {
+  height: auto;
+  margin: auto;
+}
+#header {
+  width: 1200px;
+  height: 80px;
+  margin: 30px auto;
+  position: relative;
+}
 
-  #mainview { 
-    width: 100%;
-    height: 500px;
-    margin: 63px auto ;
-  }
+#mainview {
+  width: 100%;
+  height: 500px;
+  margin: 63px auto;
+}
 
-  #contents {
-    width: 1200px;
-    height: 600px;
-    margin: 0 auto 30px ; 
-    position: relative;
+#contents {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto 30px;
+  position: relative;
+}
 
-  }
- 
- /* ******************* 개별영역 선언시작 **************** */
+/* ******************* 개별영역 선언시작 **************** */
 
 /* header */
- #header h1 {
-   width: 500px;
-   height: 80px;
-   background-image: url(../image/headerlogo_h1.png);
-   float: left;
+#header h1 {
+  width: 500px;
+  height: 80px;
+  background-image: url(../image/headerlogo_h1.png);
+  float: left;
 }
-  #header .gnb {
-    height: 48px;
-    float: right;
-  }
-  #header .gnb li {
-    float: left;
-    margin: 10px 20px 0 0;
-    font: 300 26px/48px 'Nanum Gothic', sans-serif;
-  }
-  #header .gnb li:last-child {
-    margin: 10px 0 0 0;
-  }
-  #header .gnb a {
-    cursor: pointer;
-    font: 700 15px 'Nanum Gothic', sans-serif
-  }
+#header .gnb {
+  height: 48px;
+  float: right;
+}
+#header .gnb li {
+  float: left;
+  margin: 10px 20px 0 0;
+  font: 300 26px/48px "Nanum Gothic", sans-serif;
+}
+#header .gnb li:last-child {
+  margin: 10px 0 0 0;
+}
+#header .gnb a {
+  cursor: pointer;
+  font: 700 15px "Nanum Gothic", sans-serif;
+}
 
 /* Mainview */
 
@@ -72,13 +72,12 @@ body {
 /* Contents*/
 
 #contents h1 {
-  font: bold 3rem/21px 'Nanum Gothic', sans-serif;
+  font: bold 3rem/21px "Nanum Gothic", sans-serif;
   margin-bottom: 42px;
 }
 #contents .part {
   height: 36px;
   margin-bottom: 36px;
-
 }
 #contents .part li {
   float: left;
@@ -86,7 +85,7 @@ body {
   margin-right: 20px;
 }
 #contents .part li a {
-  font: 500 1.8rem/36px 'Nanum Gothic', sans-serif;
+  font: 500 1.8rem/36px "Nanum Gothic", sans-serif;
 }
 #contents .part li a:hover {
   color: #c00;
@@ -94,58 +93,59 @@ body {
 
 /*profile*/
 
+#contents .c-box,
+.d-box,
+.v-box {
+  height: 150px;
+  position: relative;
+}
+#contents .c-box li,
+.d-box li,
+.v-box li {
+  float: left;
+  text-align: center;
+  margin: 20px;
+}
+#contents .c-box li img,
+.d-box li img,
+.v-box li img {
+  width: 50px;
+  height: 50px;
+}
 
-  #contents .c-box, .d-box, .v-box {
-    height: 150px;
-    position:relative;
-  }
-  #contents .c-box li, .d-box li, .v-box li{
-    float: left;
-    text-align: center;
-    margin: 20px; 
-  }
-  #contents .c-box li img, .d-box li img, .v-box li img{
-   width: 50px;
-   height: 50px;
-  }
+/* Project */
 
-  /* Project */
+.swiper-wrap {
+  width: 1200px;
+  height: 450px;
+  margin: 100px auto;
+  position: relative;
+}
 
-  .swiper-wrap {
-    width: 1200px;
-    height: 450px;
-    margin: 100px auto;
-    position: relative;
-  }
+.swiper-wrap h1 {
+  display: block;
+  width: 100%;
+  height: 21px;
+  font: bold 3rem/21px "Nanum Gothic", sans-serif;
+  margin-bottom: 36px;
+}
 
-  .swiper-wrap h1 {
-    display: block;
-    width: 100%;
-    height: 21px;
-    font: bold 3rem/21px 'Nanum Gothic', sans-serif;
-    margin-bottom: 36px;
+.swiper-wrap .swiper-container {
+  width: 1000px;
+  height: 350px;
+  overflow: hidden;
+  margin: 36px auto;
+}
+/* Swipper */
+/* .swiper-wrap .swiper-pagination{ bottom: 30px; } */
 
-  }
+/* Swiper Reset */
 
-  .swiper-wrap .swiper-container {
-    width: 1000px;
-    height: 350px;
-    overflow: hidden;
-    margin: 36px auto;
-  }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(6, 245, 125);
 
-
-  /* Swipper Pagination */
-  /* .swiper-wrap .swiper-pagination{ bottom: 30px; } */
-
-  /* Swiper Reset */
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: rgb(6, 245, 125);
-
-  
-  
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,37 +159,45 @@ body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  /* Controls */
-  .swiper-button-prev,
-  .swiper-button-next{
-    display: block;
-    width: 80px;
-    height: 80px;
-    font-size: 70px;
-    text-align: center;
-    line-height: 80px;
-    position: absolute; top: 80%;
-    margin-top: -50px;
-  }
-  #prev_btn{left: 0;}
-  #next_btn{right: 0;}
+}
 
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+/* Controls */
+.swiper-button-prev,
+.swiper-button-next {
+  display: block;
+  width: 80px;
+  height: 80px;
+  font-size: 70px;
+  text-align: center;
+  line-height: 80px;
+  position: absolute;
+  top: 80%;
+  margin-top: -50px;
+}
+#prev_btn {
+  left: 0;
+}
+#next_btn {
+  right: 0;
+}
 
-  /* Media Query Area Start */
-  @media screen and (max-width: 959px){
-    .swiper-wrap{ width: 80%; }
-    .swiper-wrap .swiper{ width: 80%; margin: auto; }
+/* Media Query Area Start */
+@media screen and (max-width: 959px) {
+  .swiper-wrap {
+    width: 80%;
   }
+  .swiper-wrap .swiper {
+    width: 80%;
+    margin: auto;
+  }
+}
 
 /*Partners & Support*/
 
@@ -202,12 +210,12 @@ body {
 }
 #ps h2 {
   height: 24px;
-  font: 500 36px/24px 'Roboto', sans-serif;
+  font: 500 36px/24px "Roboto", sans-serif;
   text-align: center;
   margin: 24px;
 }
 
-#ps li>a {
+#ps li > a {
   display: block;
   margin-top: 24px;
 }
@@ -225,9 +233,8 @@ body {
   width: 100%;
   height: 250px;
   padding: 30px 180px;
-
 }
-#footer h2{
+#footer h2 {
   width: 300px;
   height: 80px;
   background-image: url(../image/headerlogo_h2.png);
@@ -235,21 +242,21 @@ body {
   float: left;
 }
 
-#footer .f-group{
+#footer .f-group {
   width: 600px;
   height: 150px;
   float: right;
 }
-#footer .f-group>ul li{
+#footer .f-group > ul li {
   display: flex;
   justify-content: space-between;
   width: 600px;
   margin-top: 45px;
 }
-#footer .f-group li p{
-  font: bold 18px/1.5  'Nanum Gothic', sans-serif;
+#footer .f-group li p {
+  font: bold 18px/1.5 "Nanum Gothic", sans-serif;
 }
-#footer .f-group li img{
+#footer .f-group li img {
   margin: 0;
 }
 
@@ -270,50 +277,48 @@ body {
   text-align: center;
   line-height: 450px;
 }
-  #popup1 .p-header {
-    width: 100%;
-    height: 15%;
-    position: relative;
-  }
-    #popup1 .p-header img {
-      float: left;
-      margin: 5px;
-      cursor: pointer;
-    }
-    #popup1 .p-header .closebtn {
-    float: right;
-    margin: 10px 10px;
-    font-size: 30px;
-    border: none;
-    cursor: pointer;
-  } 
-  #popup1 .p-mid {
-    width: 100%;
-    height: 70%;
-    clear: both;
-    background-color: #e2e2e2;
-  }
-  #popup1 .p-footer {
-    width: 100%;
-    height: 15%;
-    padding: 15px 0;
-  }
-    #popup1 .p-footer #btn {
-      display: block;
-      width: 90px;
-      height: 30px;
-      border: 1px solid #722EFF;
-      border-radius: 10px;
-      margin: 5px auto;
-      font: 600 1.6rem/30px 'Nanum Gothic', sans-serif;
-      color: #722EFF;
-      background-color: #fff;
-      cursor: pointer;
-    }
-    #popup1 .p-footer #btn:hover {
-      color: #fff;
-      background-color: #722EFF;
-      cursor: pointer;
-    }
-
-
+#popup1 .p-header {
+  width: 100%;
+  height: 15%;
+  position: relative;
+}
+#popup1 .p-header img {
+  float: left;
+  margin: 5px;
+  cursor: pointer;
+}
+#popup1 .p-header .closebtn {
+  float: right;
+  margin: 10px 10px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+#popup1 .p-mid {
+  width: 100%;
+  height: 70%;
+  clear: both;
+  background-color: #e2e2e2;
+}
+#popup1 .p-footer {
+  width: 100%;
+  height: 15%;
+  padding: 15px 0;
+}
+#popup1 .p-footer #btn {
+  display: block;
+  width: 90px;
+  height: 30px;
+  border: 1px solid #722eff;
+  border-radius: 10px;
+  margin: 5px auto;
+  font: 600 1.6rem/30px "Nanum Gothic", sans-serif;
+  color: #722eff;
+  background-color: #fff;
+  cursor: pointer;
+}
+#popup1 .p-footer #btn:hover {
+  color: #fff;
+  background-color: #722eff;
+  cursor: pointer;
+}
