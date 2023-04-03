@@ -52,7 +52,7 @@ $(function () {
     },
   });
 });
-
+console.log("1");
 // // popup //
 
 // var openButton = document.querySelector("#slide1");
